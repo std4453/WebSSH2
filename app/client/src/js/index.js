@@ -26,7 +26,7 @@ var allowreplay = false
 var allowreauth = false
 var sessionLog, sessionFooter, logDate, currentDate, myFile, errorExists
 var socket, termid // eslint-disable-line
-var term = new Terminal()
+var term = new Terminal({ fontFamily: 'Fira Code' });
 // DOM properties
 var status = document.getElementById('status')
 var header = document.getElementById('header')
