@@ -1,18 +1,17 @@
 {
-  "name": "webssh2",
+  "name": "@std4453/webssh2",
   "version": "0.2.8",
   "ignore": [
     ".gitignore"
   ],
-  "bin": "./index.js",
   "description": "A Websocket to SSH2 gateway using term.js, socket.io, ssh2, and express",
-  "homepage": "https://github.com/billchurch/WebSSH2",
+  "homepage": "https://github.com/std4453/WebSSH2",
   "keywords": "ssh webssh terminal webterminal",
-  "license": "SEE LICENSE IN FILE - LICENSE",
+  "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/billchurch/WebSSH2.git"
+    "url": "git+https://github.com/std4453/WebSSH2.git"
   },
   "contributors": [
     {
@@ -24,7 +23,7 @@
     "node": ">= 6"
   },
   "bugs": {
-    "url": "https://github.com/billchurch/WebSSH2/issues"
+    "url": "https://github.com/std4453/WebSSH2/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
@@ -46,16 +45,12 @@
     "build": "webpack --progress --colors --config scripts/webpack.prod.js",
     "builddev": "webpack --progress --colors --config scripts/webpack.dev.js",
     "analyze": "webpack --json --config scripts/webpack.prod.js | webpack-bundle-size-analyzer",
-    "test": "snyk test",
     "watch": "nodemon index.js",
-    "standard": "standard --verbose --fix | snazzy",
-    "cleanmac": "find . -name '.DS_Store' -type f -delete"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
     "@fortawesome/free-solid-svg-icons": "^5.5.0",
     "ajv": "^6.5.5",
-    "bithound": "^1.7.0",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
@@ -63,9 +58,6 @@
     "file-loader": "^2.0.0",
     "nodemon": "^1.18.6",
     "postcss-discard-comments": "^4.0.1",
-    "snazzy": "^8.0.0",
-    "snyk": "^1.108.2",
-    "standard": "^12.0.1",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.2",
@@ -74,15 +66,5 @@
     "webpack-merge": "^4.1.4",
     "webpack-stream": "^5.1.1",
     "xterm": "^3.8.0"
-  },
-  "standard": {
-    "ignore": [
-      "client/public/webssh2.bundle.js",
-      "bigip/*",
-      "screenshots/*",
-      "bin/*",
-      "build/*",
-      "workspace/*"
-    ]
   }
 }
